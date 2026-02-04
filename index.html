@@ -1,0 +1,138 @@
+02.05 4:07 AM
+index.html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My BACHA ❤️</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(#ff416c,#ff4b2b);
+text-align:center;
+color:white;
+overflow:hidden;
+}
+
+.card{
+background:rgba(0,0,0,0.3);
+margin:20px;
+padding:25px;
+border-radius:20px;
+}
+
+h1{font-size:28px;}
+p{font-size:16px;}
+
+button{
+padding:12px 25px;
+border:none;
+border-radius:25px;
+font-size:16px;
+background:white;
+color:#ff416c;
+margin-top:10px;
+}
+
+.heart{
+position:fixed;
+color:red;
+font-size:20px;
+animation:float 6s linear infinite;
+}
+
+@keyframes float{
+0%{bottom:-10px;opacity:1;}
+100%{bottom:100%;opacity:0;}
+}
+
+iframe{
+width:100%;
+max-width:320px;
+height:180px;
+border-radius:15px;
+border:none;
+}
+@media (max-width: 900px) { 
+img { 
+   max-width: 100%;
+   height: auto;
+}
+
+.table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+}	
+
+
+</style>
+</head>
+
+<body onload="popup(); hearts();">
+
+<h1>❤️ Happy Valentine BACHA ❤️</h1>
+
+<div class="card">
+
+<h2>Twinkle Gupta</h2>
+
+<p>
+BACHA, tum bahut khubsurat ho — sirf chehre se nahi,  
+dil se bhi ❤️  
+Tumhari smile meri duniya bright kar deti hai.
+</p>
+
+<p>
+I promise to love you, respect you,  
+and stand with you forever   
+— Deepak
+</p>
+
+<button onclick="alert('I LOVE YOU BACHA ❤️')">Tap Me</button>
+
+<br><br>
+
+<!-- Music -->
+<iframe src="https://www.youtube.com/embed/Jy7yH6zK2z0?autoplay=1&mute=1"></iframe>
+
+<p style="font-size:12px">(Tap play for music )</p>
+
+</div>
+
+<script>
+function popup(){
+setTimeout(()=>{
+alert("Will you be my Valentine, BACHA? ❤️");
+},2000);
+}
+
+function hearts(){
+setInterval(()=>{
+const h=document.createElement("div");
+h.className="heart";
+h.innerHTML="❤️";
+h.style.left=Math.random()*100+"%";
+document.body.appendChild(h);
+setTimeout(()=>h.remove(),6000);
+},300);
+}
+</script>
+
+<p style="bottom: 10px; right: 10px; position: absolute;"><a href="https://wordtohtml.net/?utm_source=wth_free_doc_conversion_link&utm_medium=external" target="_blank" style="font-size:11px; color: #d0d0d0">Converted to HTML with WordToHTML.net</a></p>
+</body>
+</html>
